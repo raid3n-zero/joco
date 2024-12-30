@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply w-[360px] h-[800px];
+    }
+
+    /* In your CSS file */
+    .float-label-input {
+        @apply relative;
+        /* To position the label absolutely */
+    }
+
+    .float-label-input label {
+        @apply absolute left-4 top-3 text-gray-500 transition-all duration-200 transform scale-100 origin-top-left bg-transparent;
+        /* Initial label styles */
+    }
+
+    .float-label-input input:focus+label,
+    .float-label-input input:not(:placeholder-shown)+label {
+        @apply -translate-y-5 scale-75 bg-[#D9D9D9];
+        /* Move label up and scale down */
+    }
+
+}
