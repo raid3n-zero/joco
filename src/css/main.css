@@ -881,6 +881,10 @@ video {
   height: 310px;
 }
 
+.h-\[px\]{
+  height: px;
+}
+
 .w-\[110px\]{
   width: 110px;
 }
