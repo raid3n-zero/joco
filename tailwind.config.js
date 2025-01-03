@@ -11,6 +11,6 @@ module.exports = {
     },
   },
   plugins: [
-    addIconSelectors(["solar", "basil"]),
+    addIconSelectors(["solar", "basil", "fontisto"]),
   ],
 }
